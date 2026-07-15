@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    tools { nodejs: 'node' }
+    tools { nodejs 'node' }
 
     environment {
         APP  = "${env.BRANCH_NAME = 'main' ? 'nodemain' : 'nodedev'}"
